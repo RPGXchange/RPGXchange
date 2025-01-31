@@ -1,0 +1,8 @@
+- name: Structure
+  items:
+  - name: Overview
+    href: structure/index.md
+  - name: Metadata
+    href: structure/metadata.md
+- name: Versioning
+  href: versioning.md
