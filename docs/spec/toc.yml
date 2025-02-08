@@ -6,3 +6,5 @@
     href: structure/metadata.md
 - name: Versioning
   href: versioning.md
+- name: Resource Ids
+  href: resource_ids.md

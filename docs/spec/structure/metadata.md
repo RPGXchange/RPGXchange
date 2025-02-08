@@ -6,7 +6,7 @@ The `metadata.json` file is required in the root directory and contains essentia
 
 | Property | Type | Required | Default | Description |
 |----------|------|----------|----------|-------------|
-| id | string | Yes | - | The semi-unique identifier for the RPGX file |
+| id | string | Yes | - | The semi-unique identifier for the RPGX file; Must follow [resource id rules](../resource_ids.md) |
 | name | string | No | Value of `id` | The user friendly name of the RPGX file |
 | description | string | No | - | The user friendly description of the RPGX file |
 | version | string | No | - | The version of the RPGX file in the format of X.Y.Z with the Y and Z sections being optional; See [Versioning](../versioning.md#file-versioning) |
