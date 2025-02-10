@@ -4,6 +4,8 @@
     href: structure/index.md
   - name: Metadata
     href: structure/metadata.md
+  - name: Variables
+    href: structure/variables.md
 - name: Versioning
   href: versioning.md
 - name: Resource Ids
