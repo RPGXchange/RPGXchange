@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RPGXchange Variables Schema",
+  "description": "Schema for validating variables.json files in RPGXchange format",
+  "type": "object",
+  "patternProperties": {
+    "^[a-zA-Z]([a-zA-Z0-9_]*[a-zA-Z0-9]+)?$": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["integer", "number", "string", "boolean", "null", "any"],
+          "default": "any"
+        },
+        "description": {
+          "type": "string"
+        },
+        "value": {
+          "type": ["number", "string", "boolean", "null"]
+        }
+      }
+    }
+  },
+  "additionalItems": false
+}
