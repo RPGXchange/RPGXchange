@@ -1,4 +1,5 @@
 - name: Structure
+  href: structure/index.md
   items:
   - name: Overview
     href: structure/index.md
@@ -6,7 +7,9 @@
     href: structure/metadata.md
   - name: Variables
     href: structure/variables.md
-- name: Versioning
-  href: versioning.md
-- name: Resource Ids
-  href: resource_ids.md
+- name: Common
+  items:
+  - name: Resource Ids
+    href: common/resource_ids.md
+  - name: Versioning
+    href: common/versioning.md
