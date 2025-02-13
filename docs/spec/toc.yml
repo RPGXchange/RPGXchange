@@ -9,6 +9,8 @@
     href: structure/variables.md
 - name: Common
   items:
+  - name: Formulas
+    href: common/formulas.md
   - name: Resource Ids
     href: common/resource_ids.md
   - name: Versioning
