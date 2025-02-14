@@ -1,5 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RPGXchange Metadata Schema",
+  "description": "Schema for validating metadata.json files in RPGXchange format",
   "type": "object",
   "required": ["id"],
   "properties": {
