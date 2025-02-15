@@ -2,6 +2,9 @@
 
 RPGXchange (RPGX) is an open specification for a versatile data interchange format designed to bridge the gap between various tabletop roleplaying game (TTRPG) platforms, tools, and applications. This format enables seamless transfer of character data, game content, and resources across virtual tabletops (VTTs), character managers, digital assistants, and other gaming platforms.
 
+> [!Warning]
+> RPGXchange is currently in development and the specification is subject to change. While we encourage exploration and feedback, we recommend against using it in production environments until version 1.0 is released.
+
 ## Why RPGXchange?
 
 The TTRPG community has experienced tremendous growth in digital tools and platforms, each offering unique features and capabilities. However, this diversity has led to fragmentation, making it challenging for players and game masters to move their content between different platforms or use multiple tools together effectively.
