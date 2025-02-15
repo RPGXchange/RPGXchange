@@ -34,7 +34,7 @@ The `data/` directory contains all game-related data.
 
 ## Version Control
 
-RPGX files follow [semantic versioning](https://semver.org/) (MAJOR.MINOR.PATCH) conventions. More specific versioning details can be found on the Versioning 
+RPGX files follow [semantic versioning](https://semver.org/) (MAJOR.MINOR.PATCH) conventions. More specific versioning details can be found on [Versioning](../common/versioning.md).
 
 ## File Extensions
 

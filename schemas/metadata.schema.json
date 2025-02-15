@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RPGXchange Metadata Schema",
+  "description": "Schema for validating metadata.json files in RPGXchange format",
+  "type": "object",
+  "required": ["id"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The semi-unique identifier for the RPGX file"
+    },
+    "name": {
+      "type": "string",
+      "description": "The user friendly name of the RPGX file"
+    },
+    "description": {
+      "type": "string",
+      "description": "The user friendly description of the RPGX file"
+    },
+    "version": {
+      "type": "string",
+      "description": "The version of the RPGX file in format X.Y.Z (Y and Z optional)",
+      "pattern": "^\\d+(\\.\\d+)?(\\.\\d+)?$"
+    },
+    "type": {
+      "type": "string",
+      "description": "The type of RPGX file",
+      "enum": ["source", "character"]
+    },
+    "namespace": {
+      "type": "string",
+      "description": "The root namespace of the RPGX file"
+    },
+    "authors": {
+      "type": "array",
+      "description": "The authors of the RPGX file",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "The name of the author"
+              },
+              "email": {
+                "type": "string",
+                "description": "The email for the author"
+              },
+              "url": {
+                "type": "string",
+                "description": "The URL for the author"
+              },
+              "credit": {
+                "type": "string",
+                "description": "The contributions made by the author"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "description": "The dependencies of the RPGX file",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string",
+            "description": "The semi-unique identifier for the dependency"
+          },
+          {
+            "type": "object",
+            "required": ["id"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "The semi-unique identifier for the dependency"
+              },
+              "version": {
+                "type": "string",
+                "description": "The version of the dependency"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
