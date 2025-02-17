@@ -14,6 +14,7 @@ The `metadata.json` file is required in the root directory and contains essentia
 | namespace | string | No | - | The root namespace of the RPGX file |
 | authors | array | No | `[]` | A list of authors of the project. Can be strings or objects with name, email, url, and/or credit fields |
 | dependencies | array | No | `[]` | A list of required RPGX files. Can be strings or objects with id, and [version selector](../common/versioning.md#version-selectors) |
+| rpgxVersion | string | No | `undefined` | The target version of RPGX to use. See [Versioning](../common/versioning.md) |
 
 ### Example
 
@@ -40,6 +41,7 @@ The `metadata.json` file is required in the root directory and contains essentia
       "version": "1.0"
     },
     "fantasy"
-  ]
+  ],
+  "rpgxVersion": "0.1.0"
 }
 ```
