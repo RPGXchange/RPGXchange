@@ -1,0 +1,9 @@
+{
+  "$schema": "../../../../../schemas/variables.schema.json",
+  "health": {
+    "value": 10
+  },
+  "experience": {
+    "value": 3405
+  }
+}

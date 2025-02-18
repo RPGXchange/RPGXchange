@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../../schemas/variables.schema.json",
+  "agility": {
+    "type": "integer",
+    "description": "Speed and coordination",
+    "value": 10
+  },
+  "tech": {
+    "type": "integer",
+    "description": "Technical aptitude",
+    "value": 10
+  },
+  "shieldPoints": {
+    "type": "integer",
+    "description": "Energy shield strength",
+    "value": "{5 + floor(tech / 2)}"
+  }
+}

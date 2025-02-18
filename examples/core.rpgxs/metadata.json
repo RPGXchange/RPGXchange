@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/metadata.schema.json",
+  "id": "core",
+  "name": "Example Core System",
+  "description": "Basic example of core rules and statistics for a tabletop RPG system",
+  "version": "0.1.0",
+  "type": "source",
+  "namespace": "example.core",
+  "rpgxVersion": "0.1.0",
+  "authors": [
+    {
+      "name": "RPGX Team",
+      "credit": "Core system design"
+    },
+    "Whix100"
+  ]
+}

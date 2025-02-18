@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/metadata.schema.json",
+  "id": "wizard",
+  "name": "Example Wizard",
+  "description": "An example of a wizard character",
+  "version": "0.1.0",
+  "type": "character",
+  "namespace": "example",
+  "rpgxVersion": "0.1.0",
+  "dependencies": [
+    {
+      "id": "core",
+      "version": "0.1.0"
+    },
+    {
+      "id": "fantasy",
+      "version": "0.1.0"
+    }
+  ],
+  "authors": [
+    {
+      "name": "RPGX Team",
+      "credit": "Core system design"
+    },
+    "Whix100"
+  ]
+}

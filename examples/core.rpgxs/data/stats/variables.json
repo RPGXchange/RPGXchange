@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../schemas/variables.schema.json",
+  "health": {
+    "type": "integer",
+    "description": "Current health points",
+    "value": "{example.core.stats:maxHealth}"
+  },
+  "maxHealth": {
+    "type": "integer",
+    "description": "Maximum health points",
+    "value": "{example.core.abilities:constitution * level}"
+  },
+  "experience": {
+    "type": "integer",
+    "description": "Total experience points",
+    "value": 0
+  },
+  "level": {
+    "type": "integer",
+    "description": "Character level",
+    "value": "{floor(experience / 1000) + 1}"
+  }
+}

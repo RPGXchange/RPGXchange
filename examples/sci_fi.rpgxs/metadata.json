@@ -1,0 +1,22 @@
+{
+  "id": "sci_fi",
+  "name": "Example Sci-Fi RPG System",
+  "description": "Science fiction rules and statistics",
+  "version": "0.1.0",
+  "type": "source",
+  "namespace": "example.sci_fi",
+  "rpgxVersion": "0.1.0",
+  "dependencies": [
+    {
+      "id": "core",
+      "version": ">=1.0.0 <2.0.0"
+    }
+  ],
+  "authors": [
+    {
+      "name": "RPGX Team",
+      "credit": "Core system design"
+    },
+    "Whix100"
+  ]
+}

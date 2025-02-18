@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../../schemas/variables.schema.json",
+  "strength": {
+    "type": "integer",
+    "description": "Physical power",
+    "value": 10
+  },
+  "constitution": {
+    "type": "integer",
+    "description": "Endurance and health",
+    "value": 10
+  },
+  "intelligence": {
+    "type": "integer",
+    "description": "Knowledge and reasoning",
+    "value": 10
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "../../../../../schemas/variables.schema.json",
+  "magic": {
+    "value": 13
+  }
+}
