@@ -16,3 +16,5 @@
     href: common/resource_ids.md
   - name: Versioning
     href: common/versioning.md
+- name: License
+  href: license.md
