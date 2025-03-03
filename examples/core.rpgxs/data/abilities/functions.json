@@ -1,4 +1,5 @@
 {
+  "$schema": "../../../../schemas/functions.schema.json",
   "calcModifier": {
     "parameters": {
       "abilityScore": {

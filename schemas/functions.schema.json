@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RPGXchange Functions Schema",
+  "description": "Schema for validating functions.json files in RPGXchange format",
+  "type": "object",
+  "patternProperties": {
+    "^[a-zA-Z]([a-zA-Z0-9_]*[a-zA-Z0-9]+)?$": {
+      "type": "object",
+      "properties": {
+        "parameters": {
+          "type": "object",
+          "patternProperties": {
+            "^[a-zA-Z]([a-zA-Z0-9_]*[a-zA-Z0-9]+)?$": {
+              "$ref": "variables.schema.json#/patternProperties/^[a-zA-Z]([a-zA-Z0-9_]*[a-zA-Z0-9]+)?$"
+            }
+          }
+        },
+        "body": {
+          "type": ["number", "string", "boolean", "null"]
+        },
+        "returnType": {
+          "type": "string",
+          "enum": ["integer", "number", "string", "boolean", "null", "any"],
+          "default": "any"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "additionalItems": false
+}
