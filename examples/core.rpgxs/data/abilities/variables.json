@@ -5,14 +5,29 @@
     "description": "Physical power",
     "value": 10
   },
+  "strengthModifier": {
+    "type": "integer",
+    "description": "Strength modifier",
+    "value": "{example.core.abilities:calcModifier(example.core.abilities.strength)}"
+  },
   "constitution": {
     "type": "integer",
     "description": "Endurance and health",
     "value": 10
   },
+  "constitutionModifier": {
+    "type": "integer",
+    "description": "Constitution modifier",
+    "value": "{example.core.abilities:calcModifier(example.core.abilities.constitution)}"
+  },
   "intelligence": {
     "type": "integer",
     "description": "Knowledge and reasoning",
     "value": 10
+  },
+  "intelligenceModifier": {
+    "type": "integer",
+    "description": "Intelligence modifier",
+    "value": "{example.core.abilities:calcModifier(example.core.abilities.intelligence)}"
   }
 }

@@ -1,0 +1,12 @@
+{
+  "calcModifier": {
+    "parameters": {
+      "abilityScore": {
+        "type": "integer"
+      }
+    },
+    "body": "{floor((abilityScore - 10) / 2)}",
+    "returnType": "integer",
+    "description": "Calculates the modifier score for a given ability score"
+  }
+}
