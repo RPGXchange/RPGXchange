@@ -89,25 +89,6 @@ To include literal curly braces in a string, use double curly braces `{{}}`.
 }
 ```
 
-### Examples
-
-```json
-{
-  "health": {
-    "type": "integer",
-    "value": 10.7        // Coerced to 11
-  },
-  "name": {
-    "type": "string",
-    "value": 42          // Coerced to "42"
-  },
-  "active": {
-    "type": "boolean",
-    "value": 1           // Coerced to true
-  }
-}
-```
-
 ## Best Practices
 
 1. Use descriptive variable names
