@@ -8,8 +8,12 @@
     href: structure/metadata.md
   - name: Variables
     href: structure/variables.md
+  - name: Functions
+    href: structure/functions.md
 - name: Common
   items:
+  - name: Data Types
+    href: common/data_types.md
   - name: Formulas
     href: common/formulas.md
   - name: Resource Ids

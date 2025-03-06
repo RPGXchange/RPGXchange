@@ -1,6 +1,6 @@
 # Variables
 
-Variables are values that are stored within a RPGX file inside of `variables.json` files located in the ZIP archive. These files must be located within the `data` folder in a directory structure that correspondes to their [namespace](./namespaces.md).
+Variables are values that are stored within a RPGX file inside of `variables.json` files located in the ZIP archive. These files must be located within the `data` folder in a directory structure that corresponds to their [namespace](./namespaces.md).
 
 ## Location
 
@@ -17,7 +17,7 @@ Variables are defined as JSON objects with specific properties that determine th
 
 | Property | Type | Required | Default | Description |
 |----------|------|----------|----------|-------------|
-| type | string | No | `any` | The data type of the variable; Must be one of: `integer`, `number`, `string`, `boolean`, `null`, or `any` |
+| type | string | No | `"any"` | The data type of the variable; See [Data Types](../common/data_types.md) |
 | description | string | No | - | A user-friendly description of what the variable represents |
 | value | varies | No | `null` | The value of the variable |
 
@@ -25,26 +25,26 @@ Variables are defined as JSON objects with specific properties that determine th
 
 ```json
 {
-    "strength": {
-        "type": "integer",
-        "description": "The physical strength attribute of the character",
-        "value": 10
-    },
-    "bonus": {
-        "type": "number",
-        "description": "Calculated bonus damage based on strength",
-        "value": "{floor(character.stats.strength / 2)}"
-    },
-    "isAlive": {
-        "type": "boolean",
-        "description": "Indicates if the character is currently alive",
-        "value": true
-    },
-    "title": {
-        "type": "string",
-        "description": "The character's earned title",
-        "value": "Novice"
-    }
+  "strength": {
+    "type": "integer",
+    "description": "The physical strength attribute of the character",
+    "value": 10
+  },
+  "bonus": {
+    "type": "number",
+    "description": "Calculated bonus damage based on strength",
+    "value": "{floor(character.stats.strength / 2)}"
+  },
+  "isAlive": {
+    "type": "boolean",
+    "description": "Indicates if the character is currently alive",
+    "value": true
+  },
+  "title": {
+    "type": "string",
+    "description": "The character's earned title",
+    "value": "Novice"
+  }
 }
 ```
 
@@ -78,42 +78,14 @@ To include literal curly braces in a string, use double curly braces `{{}}`.
 
 ```json
 {
-    "greeting": {
-        "type": "string",
-        "value": "Hello, {character:name}!"  // Evaluates character.name
-    },
-    "status": {
-        "type": "string",
-        "value": "HP: {{current}} / {maxHealth}"  // Shows "{current}" literally and evaluates maxHealth
-    }
-}
-```
-
-### Type Coercion
-
-When a value doesn't match the declared type:
-
-1. Numbers are rounded to integers for `integer` type
-2. Non-boolean values are converted to boolean (`0`, `""`, become `false`; `null` converts to `false` if value is non-nullable)
-3. All other values are converted to strings when type is `string` (`undefined` and `null` are converted to empty string)
-4. Invalid conversions result in `undefined`
-
-### Examples
-
-```json
-{
-    "health": {
-        "type": "integer",
-        "value": 10.7        // Coerced to 11
-    },
-    "name": {
-        "type": "string",
-        "value": 42          // Coerced to "42"
-    },
-    "active": {
-        "type": "boolean",
-        "value": 1           // Coerced to true
-    }
+  "greeting": {
+    "type": "string",
+    "value": "Hello, {character:name}!"  // Evaluates character.name
+  },
+  "status": {
+    "type": "string",
+    "value": "HP: {{current}} / {maxHealth}"  // Shows "{current}" literally and evaluates maxHealth
+  }
 }
 ```
 
