@@ -39,25 +39,6 @@ Functions are defined as JSON objects with specific properties that determine th
 }
 ```
 
-### Examples
-
-```json
-{
-  "health": {
-    "type": "integer",
-    "value": 10.7 // Coerced to 11
-  },
-  "name": {
-    "type": "string",
-    "value": 42 // Coerced to "42"
-  },
-  "active": {
-    "type": "boolean",
-    "value": 1 // Coerced to true
-  }
-}
-```
-
 ## Version Support
 
 | Version | Support Level    | Notes                               |
