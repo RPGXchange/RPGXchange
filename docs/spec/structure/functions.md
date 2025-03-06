@@ -15,12 +15,12 @@ Functions are defined as JSON objects with specific properties that determine th
 
 ### Properties
 
-| Property | Type | Required | Default | Description |
-|----------|------|----------|----------|-------------|
-| parameters | object | No | `{}` | Variable definitions for the parameters of the function |
-| body | formula string | Yes | - | An expression for the calculation of the function |
-| returnType | string | No | `"any"` | The data type of the variable; See [Data Types](../common/data_types.md) |
-| description | string | No | A user-friendly description of what the variable represents |
+| Property    | Type           | Required | Default                                                     | Description                                                              |
+| ----------- | -------------- | -------- | ----------------------------------------------------------- | ------------------------------------------------------------------------ |
+| parameters  | object         | No       | `{}`                                                        | Variable definitions for the parameters of the function                  |
+| body        | formula string | Yes      | -                                                           | An expression for the calculation of the function                        |
+| returnType  | string         | No       | `"any"`                                                     | The data type of the variable; See [Data Types](../common/data_types.md) |
+| description | string         | No       | A user-friendly description of what the variable represents |
 
 ### Example
 
@@ -43,24 +43,24 @@ Functions are defined as JSON objects with specific properties that determine th
 
 ```json
 {
-    "health": {
-        "type": "integer",
-        "value": 10.7        // Coerced to 11
-    },
-    "name": {
-        "type": "string",
-        "value": 42          // Coerced to "42"
-    },
-    "active": {
-        "type": "boolean",
-        "value": 1           // Coerced to true
-    }
+  "health": {
+    "type": "integer",
+    "value": 10.7 // Coerced to 11
+  },
+  "name": {
+    "type": "string",
+    "value": 42 // Coerced to "42"
+  },
+  "active": {
+    "type": "boolean",
+    "value": 1 // Coerced to true
+  }
 }
 ```
 
-## Best Practices
+## Version Support
 
-1. Use descriptive variable names
-2. Keep namespaces organized
-3. Consider variable dependencies
-4. Use type coercion sparingly
+| Version | Support Level    | Notes                               |
+| ------- | ---------------- | ----------------------------------- |
+| 0.1.0   | ❌ Not Supported |                                     |
+| 0.2.0   | ✅ Supported     | Initial implementation of functions |
