@@ -2,5 +2,13 @@
   "$schema": "../../../../../schemas/variables.schema.json",
   "magic": {
     "value": 13
+  },
+  "knownSpells": {
+    "type": "array",
+    "items": {
+      "type": "string"
+    },
+    "description": "List of spells the character knows",
+    "value": []
   }
 }
