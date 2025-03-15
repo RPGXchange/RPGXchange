@@ -21,6 +21,7 @@
             "string",
             "boolean",
             "array",
+            "object",
             "null",
             "any"
           ],
@@ -30,7 +31,7 @@
           "type": "string"
         },
         "value": {
-          "type": ["number", "string", "boolean", "array", "null"]
+          "type": ["number", "string", "boolean", "array", "object", "null"]
         }
       },
       "allOf": [
@@ -46,6 +47,27 @@
           "else": {
             "not": {
               "required": ["items"]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "object" } }
+          },
+          "then": {
+            "properties": {
+              "properties": {
+                "patternProperties": {
+                  "^[a-zA-Z]([a-zA-Z0-9_]*[a-zA-Z0-9]+)?$": {
+                    "$ref": "#/definitions/variable"
+                  }
+                }
+              }
+            }
+          },
+          "else": {
+            "not": {
+              "required": ["properties"]
             }
           }
         }

@@ -5,5 +5,13 @@
   },
   "experience": {
     "value": 3405
+  },
+  "classes": {
+    "value": [
+      {
+        "level": 2,
+        "class": "Wizard"
+      }
+    ]
   }
 }
