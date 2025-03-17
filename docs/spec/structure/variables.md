@@ -48,6 +48,54 @@ Variables are defined as JSON objects with specific properties that determine th
 }
 ```
 
+## Implied Variable Definition
+
+For simplicity, variables can also be defined using an implied definition where the value is specified directly. This is equivalent to defining a variable with only the `value` property. It's particularly useful when assigning values to variables in a character file where the variable has already been defined in a source file.
+
+### Implied Definition Syntax
+
+```json
+{
+  "variableName": value
+}
+```
+
+This implied definition is valid for all data types except `object` to avoid potential ambiguity between an object that represents a variable definition and an object that is the actual value of the variable.
+
+### Implied Definition Example
+
+```json
+{
+  "strength": 10,
+  "intelligence": 12,
+  "isAlive": true,
+  "title": "Novice",
+  "skills": ["stealth", "archery", "diplomacy"]
+}
+```
+
+This is equivalent to:
+
+```json
+{
+  "strength": {
+    "value": 10
+  },
+  "intelligence": {
+    "value": 12
+  },
+  "isAlive": {
+    "value": true
+  },
+  "title": {
+    "value": "Novice"
+  },
+  "skills": {
+    "value": ["stealth", "archery", "diplomacy"]
+  }
+}
+```
+
 ## Value Field
 
 The `value` field can contain either:
@@ -97,3 +145,4 @@ To include literal curly braces in a string, use double curly braces `{{}}`.
 2. Keep namespaces organized
 3. Consider variable dependencies
 4. Use type coercion sparingly
+5. Use implied variable definitions when appropriate for cleaner character files
