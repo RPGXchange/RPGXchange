@@ -59,14 +59,16 @@ The `value` field can contain either:
 
 Values are validated against their declared type:
 
-| Type | Valid Values | Examples |
-|------|--------------|----------|
-| `integer` | Whole numbers | `5`, `{floor(3.7)}` |
-| `number` | Any numeric value | `3.14`, `{character.abilities:strength * 1.5}` |
-| `string` | Text strings | `"Hello"`, `{name + " " + title}` |
-| `boolean` | True/false values | `true`, `{health > 0}` |
-| `any` | Any valid JSON value | `42`, `"text"`, `true` |
-| `null` | Null value only | `null` |
+| Type      | Valid Values         | Examples                                       |
+|-----------|----------------------|------------------------------------------------|
+| `integer` | Whole numbers        | `5`, `{floor(3.7)}`                            |
+| `number`  | Any numeric value    | `3.14`, `{character.abilities:strength * 1.5}` |
+| `string`  | Text strings         | `"Hello"`, `{name + " " + title}`              |
+| `boolean` | True/false values    | `true`, `{health > 0}`                         |
+| `array`   | List of values       | `[]`, `[1,2,3]`, `[[], [1], [2]]`              |
+| `object`  | Key-value pairs      | `{}`, `{"x":1}`, `{"a":{"b":2}}`               |
+| `null`    | Null value only      | `null`                                         |
+| `any`     | Any valid JSON value | `42`, `"text"`, `true`                         |
 
 ### String Interpolation
 
@@ -80,7 +82,7 @@ To include literal curly braces in a string, use double curly braces `{{}}`.
 {
   "greeting": {
     "type": "string",
-    "value": "Hello, {character:name}!"  // Evaluates character.name
+    "value": "Hello, {character:name}!"  // Evaluates character:name
   },
   "status": {
     "type": "string",
