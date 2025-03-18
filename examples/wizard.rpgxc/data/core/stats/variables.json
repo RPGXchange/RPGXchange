@@ -1,17 +1,11 @@
 {
   "$schema": "../../../../../schemas/variables.schema.json",
-  "health": {
-    "value": 10
-  },
-  "experience": {
-    "value": 3405
-  },
-  "classes": {
-    "value": [
-      {
-        "level": 2,
-        "class": "Wizard"
-      }
-    ]
-  }
+  "health": 10,
+  "experience": 3405,
+  "classes": [
+    {
+      "level": 2,
+      "class": "Wizard"
+    }
+  ]
 }
