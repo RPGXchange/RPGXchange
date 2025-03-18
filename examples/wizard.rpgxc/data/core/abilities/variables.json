@@ -1,12 +1,6 @@
 {
   "$schema": "../../../../../schemas/variables.schema.json",
-  "strength": {
-    "value": 8
-  },
-  "constitution": {
-    "value": 12
-  },
-  "intelligence": {
-    "value": 15
-  }
+  "strength": 8,
+  "constitution": 12,
+  "intelligence": 15
 }

@@ -2,76 +2,82 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "RPGXchange Variables Schema",
   "description": "Schema for validating variables.json files in RPGXchange format",
-  "type": "object",
-  "patternProperties": {
-    "^[a-zA-Z]([a-zA-Z0-9_]*[a-zA-Z0-9]+)?$": {
-      "$ref": "#/definitions/variable"
-    }
-  },
+  "$ref": "#/definitions/variables",
   "additionalItems": false,
   "definitions": {
     "variable": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "integer",
-            "number",
-            "string",
-            "boolean",
-            "array",
-            "object",
-            "null",
-            "any"
-          ],
-          "default": "any"
-        },
-        "description": {
-          "type": "string"
-        },
-        "value": {
-          "type": ["number", "string", "boolean", "array", "object", "null"]
-        }
-      },
-      "allOf": [
+      "anyOf": [
         {
-          "if": {
-            "properties": { "type": { "const": "array" } }
-          },
-          "then": {
-            "properties": {
-              "items": { "$ref": "#/definitions/variable" }
-            }
-          },
-          "else": {
-            "not": {
-              "required": ["items"]
-            }
-          }
+          "type": ["number", "string", "boolean", "array", "null"]
         },
         {
-          "if": {
-            "properties": { "type": { "const": "object" } }
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "integer",
+                "number",
+                "string",
+                "boolean",
+                "array",
+                "object",
+                "null",
+                "any"
+              ],
+              "default": "any"
+            },
+            "description": {
+              "type": "string"
+            },
+            "value": {
+              "type": ["number", "string", "boolean", "array", "object", "null"]
+            }
           },
-          "then": {
-            "properties": {
-              "properties": {
-                "patternProperties": {
-                  "^[a-zA-Z]([a-zA-Z0-9_]*[a-zA-Z0-9]+)?$": {
-                    "$ref": "#/definitions/variable"
+          "allOf": [
+            {
+              "if": {
+                "properties": { "type": { "const": "array" } }
+              },
+              "then": {
+                "properties": {
+                  "items": { "$ref": "#/definitions/variable" }
+                }
+              },
+              "else": {
+                "not": {
+                  "required": ["items"]
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": { "type": { "const": "object" } }
+              },
+              "then": {
+                "properties": {
+                  "properties": {
+                    "$ref": "#/definitions/variables"
                   }
+                }
+              },
+              "else": {
+                "not": {
+                  "required": ["properties"]
                 }
               }
             }
-          },
-          "else": {
-            "not": {
-              "required": ["properties"]
-            }
-          }
+          ]
         }
       ]
+    },
+    "variables": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z]([a-zA-Z0-9_]*[a-zA-Z0-9]+)?$": {
+          "$ref": "#/definitions/variable"
+        }
+      }
     }
   }
 }
