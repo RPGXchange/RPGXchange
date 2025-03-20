@@ -25,6 +25,9 @@
         },
         "description": {
           "type": "string"
+        },
+        "platforms": {
+          "$ref": "./platforms.schema.json"
         }
       }
     }

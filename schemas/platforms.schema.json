@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RPGXchange Platforms Schema",
+  "description": "Schema for validating platform dependencies in RPGXchange format",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      {
+        "type": "string",
+        "description": "The platform identifier"
+      },
+      {
+        "type": "object",
+        "required": ["id"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The platform identifier"
+          },
+          "version": {
+            "type": "string",
+            "description": "The platform version requirements"
+          }
+        }
+      }
+    ]
+  }
+}
