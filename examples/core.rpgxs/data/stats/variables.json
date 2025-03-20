@@ -34,5 +34,11 @@
     "type": "integer",
     "description": "Character level",
     "value": "{floor(experience / 1000) + 1}"
+  },
+  "specialPlatformValue": {
+    "type": "string",
+    "description": "This value only exists on platform-a",
+    "value": "XYZ",
+    "platforms": ["platform-a"]
   }
 }

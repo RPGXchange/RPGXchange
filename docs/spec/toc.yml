@@ -20,5 +20,9 @@
     href: common/resource_ids.md
   - name: Versioning
     href: common/versioning.md
+- name: Implementation
+  items:
+  - name: Platform Compatibility
+    href: implementation/compatibility.md
 - name: License
   href: license.md

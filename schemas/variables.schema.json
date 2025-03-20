@@ -32,6 +32,9 @@
             },
             "value": {
               "type": ["number", "string", "boolean", "array", "object", "null"]
+            },
+            "platforms": {
+              "$ref": "./platforms.schema.json"
             }
           },
           "allOf": [

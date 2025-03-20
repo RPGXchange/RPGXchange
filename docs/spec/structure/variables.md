@@ -15,11 +15,12 @@ Variables are defined as JSON objects with specific properties that determine th
 
 ### Properties
 
-| Property | Type | Required | Default | Description |
-|----------|------|----------|----------|-------------|
-| type | string | No | `"any"` | The data type of the variable; See [Data Types](../common/data_types.md) |
-| description | string | No | - | A user-friendly description of what the variable represents |
-| value | varies | No | `null` | The value of the variable |
+| Property    | Type   | Required | Default   | Description                                                                                   |
+| ----------- | ------ | -------- | --------- | --------------------------------------------------------------------------------------------- |
+| type        | string | No       | `"any"`   | The data type of the variable; See [Data Types](../common/data_types.md)                      |
+| description | string | No       | -         | A user-friendly description of what the variable represents                                   |
+| value       | varies | No       | `null`    | The value of the variable                                                                     |
+| platforms   | array  | No       | undefined | List of supported platforms; See [Platform Compatibility](../implementation/compatibility.md) |
 
 ### Example
 
@@ -28,7 +29,13 @@ Variables are defined as JSON objects with specific properties that determine th
   "strength": {
     "type": "integer",
     "description": "The physical strength attribute of the character",
-    "value": 10
+    "value": 10,
+    "platforms": [
+      {
+        "id": "rpgxjs",
+        "version": "1.0.0"
+      }
+    ]
   },
   "bonus": {
     "type": "number",
@@ -108,7 +115,7 @@ The `value` field can contain either:
 Values are validated against their declared type:
 
 | Type      | Valid Values         | Examples                                       |
-|-----------|----------------------|------------------------------------------------|
+| --------- | -------------------- | ---------------------------------------------- |
 | `integer` | Whole numbers        | `5`, `{floor(3.7)}`                            |
 | `number`  | Any numeric value    | `3.14`, `{character.abilities:strength * 1.5}` |
 | `string`  | Text strings         | `"Hello"`, `{name + " " + title}`              |
@@ -130,11 +137,11 @@ To include literal curly braces in a string, use double curly braces `{{}}`.
 {
   "greeting": {
     "type": "string",
-    "value": "Hello, {character:name}!"  // Evaluates character:name
+    "value": "Hello, {character:name}!" // Evaluates character:name
   },
   "status": {
     "type": "string",
-    "value": "HP: {{current}} / {maxHealth}"  // Shows "{current}" literally and evaluates maxHealth
+    "value": "HP: {{current}} / {maxHealth}" // Shows "{current}" literally and evaluates maxHealth
   }
 }
 ```
@@ -149,7 +156,7 @@ To include literal curly braces in a string, use double curly braces `{{}}`.
 
 ## Version Support
 
-| Version | Support Level      | Notes                                                                |
-| ------- | ------------------ | -------------------------------------------------------------------- |
-| 0.1.0   | ➖ Partial Support | Support for integer, number, string, boolean, and null               |
-| 0.2.0   | ✅ Support         | Added array and object data types; Added implied variable definition |
+| Version | Support Level      | Notes                                                                                                  |
+| ------- | ------------------ | ------------------------------------------------------------------------------------------------------ |
+| 0.1.0   | ➖ Partial Support | Support for integer, number, string, boolean, and null                                                 |
+| 0.2.0   | ✅ Support         | Added array and object data types, implied variable definitions, platform compatibility specifications |

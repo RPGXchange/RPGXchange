@@ -89,6 +89,9 @@
           }
         ]
       }
+    },
+    "platforms": {
+      "$ref": "./platforms.schema.json"
     }
   }
 }

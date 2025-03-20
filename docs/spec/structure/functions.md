@@ -15,12 +15,13 @@ Functions are defined as JSON objects with specific properties that determine th
 
 ### Properties
 
-| Property    | Type           | Required | Default                                                     | Description                                                              |
-| ----------- | -------------- | -------- | ----------------------------------------------------------- | ------------------------------------------------------------------------ |
-| parameters  | object         | No       | `{}`                                                        | Variable definitions for the parameters of the function                  |
-| body        | formula string | Yes      | -                                                           | An expression for the calculation of the function                        |
-| returnType  | string         | No       | `"any"`                                                     | The data type of the variable; See [Data Types](../common/data_types.md) |
-| description | string         | No       | A user-friendly description of what the variable represents |
+| Property    | Type           | Required | Default   | Description                                                                                   |
+| ----------- | -------------- | -------- | --------- | --------------------------------------------------------------------------------------------- |
+| parameters  | object         | No       | `{}`      | Variable definitions for the parameters of the function                                       |
+| body        | formula string | Yes      | -         | An expression for the calculation of the function                                             |
+| returnType  | string         | No       | `"any"`   | The data type of the variable; See [Data Types](../common/data_types.md)                      |
+| description | string         | No       | `""`      | A user-friendly description of what the variable represents                                   |
+| platforms   | array          | No       | undefined | List of supported platforms; See [Platform Compatibility](../implementation/compatibility.md) |
 
 ### Example
 
