@@ -48,7 +48,7 @@ When a value doesn't match the declared type:
 
 1. Numbers are rounded to integers for `integer` type
 2. Non-boolean values are converted to boolean (`0`, `""`, `{}`, `[]`, become `false`; `null` converts to `false` if value is non-nullable)
-3. All other values are converted to strings when type is `string` (`undefined` and `null` are converted to empty string)
+3. All other values are converted to strings when type is `string` (`undefined` and `null` are converted to empty string if value is non-nullable)
 4. Individual values are wrapped in arrays when type is `array`
 5. Arrays can be coerced to objects where the keys are the indices of the array and the values are the elements within the array
 6. Arrays can be coerced to a single value if the array only contains a single value.
