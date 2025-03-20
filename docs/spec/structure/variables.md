@@ -156,7 +156,7 @@ To include literal curly braces in a string, use double curly braces `{{}}`.
 
 ## Version Support
 
-| Version | Support Level      | Notes                                                                |
-| ------- | ------------------ | -------------------------------------------------------------------- |
-| 0.1.0   | ➖ Partial Support | Support for integer, number, string, boolean, and null               |
-| 0.2.0   | ✅ Support         | Added array and object data types; Added implied variable definition |
+| Version | Support Level      | Notes                                                                                                  |
+| ------- | ------------------ | ------------------------------------------------------------------------------------------------------ |
+| 0.1.0   | ➖ Partial Support | Support for integer, number, string, boolean, and null                                                 |
+| 0.2.0   | ✅ Support         | Added array and object data types, implied variable definitions, platform compatibility specifications |

@@ -68,3 +68,9 @@ When processing resources:
 3. Consider supporting commonly used platform IDs if your implementation is compatible
 4. Use semantic versioning for platform version requirements
 5. Document any platform-specific features or behaviors
+## Version Support
+
+| Version | Support Level    | Notes           |
+| ------- | ---------------- | --------------- |
+| 0.1.0   | ❌ Not Supported |                 |
+| 0.2.0   | ✅ Support       | Initial support |

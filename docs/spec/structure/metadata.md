@@ -46,3 +46,10 @@ The `metadata.json` file is required in the root directory and contains essentia
   "rpgxVersion": "0.1.0"
 }
 ```
+
+## Version Support
+
+| Version | Support Level      | Notes                                                                                         |
+| ------- | ------------------ | --------------------------------------------------------------------------------------------- |
+| 0.1.0   | ➖ Partial Support | Support for id, name, description, version, namespace, authors, dependencies, and rpgxVersion |
+| 0.2.0   | ✅ Support         | Added support for platform compatibility specifications                                       |
