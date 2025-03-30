@@ -71,7 +71,7 @@ For simplicity, variables can also be defined using an implied definition where 
 }
 ```
 
-This implied definition is valid for all data types except `object` to avoid potential ambiguity between an object that represents a variable definition and an object that is the actual value of the variable.
+This implied definition is valid for all data types except `object` and entities to avoid potential ambiguity between an object that represents a variable definition and an object that is the actual value of the variable.
 
 ### Implied Definition Example
 
@@ -118,16 +118,20 @@ The `value` field can contain either:
 
 Values are validated against their declared type:
 
-| Type      | Valid Values         | Examples                                       |
-| --------- | -------------------- | ---------------------------------------------- |
-| `integer` | Whole numbers        | `5`, `{floor(3.7)}`                            |
-| `number`  | Any numeric value    | `3.14`, `{character:abilities:strength * 1.5}` |
-| `string`  | Text strings         | `"Hello"`, `{name + " " + title}`              |
-| `boolean` | True/false values    | `true`, `{health > 0}`                         |
-| `array`   | List of values       | `[]`, `[1,2,3]`, `[[], [1], [2]]`              |
-| `object`  | Key-value pairs      | `{}`, `{"x":1}`, `{"a":{"b":2}}`               |
-| `null`    | Null value only      | `null`                                         |
-| `any`     | Any valid JSON value | `42`, `"text"`, `true`                         |
+| Type                                | Valid Values                  | Examples                                                    |
+| ----------------------------------- | ----------------------------- | ----------------------------------------------------------- |
+| `integer`                           | Whole numbers                 | `5`, `{floor(3.7)}`                                         |
+| `number`                            | Any numeric value             | `3.14`, `{character:abilities:strength * 1.5}`              |
+| `string`                            | Text strings                  | `"Hello"`, `{name + " " + title}`                           |
+| `boolean`                           | True/false values             | `true`, `{health > 0}`                                      |
+| `array`                             | List of values                | `[]`, `[1,2,3]`, `[[], [1], [2]]`                           |
+| `object`                            | Key-value pairs               | `{}`, `{"x":1}`, `{"a":{"b":2}}`                            |
+| `entity`[^1] | See [Entities](./entities.md) | Entity value or entity reference[^2] |
+| `null`                              | Null value only               | `null`                                                      |
+| `any`                               | Any valid JSON value          | `42`, `"text"`, `true`                                      |
+
+[^1]: Using the an entity reference as the type value
+[^2]: Referenced entity must not have any required expected values
 
 ### String Interpolation
 
@@ -160,7 +164,7 @@ To include literal curly braces in a string, use double curly braces `{{}}`.
 
 ## Version Support
 
-| Version | Support Level      | Notes                                                                                                  |
-| ------- | ------------------ | ------------------------------------------------------------------------------------------------------ |
-| 0.1.0   | ➖ Partial Support | Support for integer, number, string, boolean, and null                                                 |
-| 0.2.0   | ✅ Support         | Added array and object data types, implied variable definitions, platform compatibility specifications |
+| Version | Support Level      | Notes                                                                                                           |
+| ------- | ------------------ | --------------------------------------------------------------------------------------------------------------- |
+| 0.1.0   | ➖ Partial Support | Support for integer, number, string, boolean, and null                                                          |
+| 0.2.0   | ✅ Support         | Added array, object, and entity data types, implied variable definitions, platform compatibility specifications |
