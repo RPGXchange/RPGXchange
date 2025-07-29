@@ -8,11 +8,11 @@
   "maxMagic": {
     "type": "integer",
     "description": "Maximum magical energy points",
-    "value": "{example.core.abilities:constitution * examples.core.stats:level}"
+    "value": "{example:core:abilities:constitution * examples:core:stats:level}"
   },
   "knownSpells": {
     "type": "integer",
     "description": "Number of spells known",
-    "value": "{10 + example.core.abilities:intelligenceModifier}"
+    "value": "{10 + example:core:abilities:intelligenceModifier}"
   }
 }

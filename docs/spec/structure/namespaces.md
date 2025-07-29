@@ -8,16 +8,24 @@ Some folder names are reserved and do not contribute to namespace paths. These f
 
 ## Namespace Path Specification
 
-Namespaces are specified using the path with dots (`.`) as segment separators. When referencing a namespace, the system will match to the closest matching namespace segment that aligns with the provided path. For instance, if referencing `combat.spells`, it will match the nearest namespace that ends with these segments.
+Namespaces are specified using the path with colons (`:`) as segment separators. When referencing a namespace, the system will match to the closest matching namespace segment that aligns with the provided path. For instance, if referencing `combat:spells`, the closest matching subnamespace to the current reference will be used.
 
 To avoid ambiguity in namespace resolution, it's recommended to use absolute paths that include all namespace segments from the root. This ensures precise and predictable namespace matching.
 
 ## Example Structure:
-```
+
+```plaintext
 /                   # Base namespace from metadata.json: example
 └─ data/            # Reserved directory
-   ├─ combat/       # Namespace: example.combat
-   │  ├─ spells/    # Namespace: example.combat.spells
-   │  └─ weapons/   # Namespace: example.combat.weapons
-   └─ characters/   # Namespace: example.characters
+   ├─ combat/       # Namespace: example:combat
+   │  ├─ spells/    # Namespace: example:combat:spells
+   │  └─ weapons/   # Namespace: example:combat:weapons
+   └─ characters/   # Namespace: example:characters
 ```
+
+## Version Support
+
+| Version | Support Level | Notes                                       |
+| ------- | ------------- | ------------------------------------------- |
+| 0.1.0   | ✅ Support    | Initial implementation                      |
+| 0.2.0   | ✅ Support    | Changed namespace delimiter from `.` to `:` |
