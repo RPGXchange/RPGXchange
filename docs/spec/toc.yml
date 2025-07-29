@@ -10,6 +10,8 @@
     href: structure/variables.md
   - name: Functions
     href: structure/functions.md
+  - name: Namespaces
+    href: structure/namespaces.md
 - name: Common
   items:
   - name: Data Types

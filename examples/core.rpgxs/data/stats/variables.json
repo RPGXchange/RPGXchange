@@ -3,12 +3,12 @@
   "health": {
     "type": "integer",
     "description": "Current health points",
-    "value": "{example.core.stats:maxHealth}"
+    "value": "{example:core:stats:maxHealth}"
   },
   "maxHealth": {
     "type": "integer",
     "description": "Maximum health points",
-    "value": "{example.core.abilities:constitution * level}"
+    "value": "{example:core:abilities:constitution * level}"
   },
   "experience": {
     "type": "integer",

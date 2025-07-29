@@ -5,7 +5,7 @@
   "description": "Fantasy-themed RPG rules and statistics",
   "version": "0.1.0",
   "type": "source",
-  "namespace": "example.fantasy",
+  "namespace": "example:fantasy",
   "rpgxVersion": "0.1.0",
   "dependencies": [
     {

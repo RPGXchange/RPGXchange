@@ -6,7 +6,7 @@ Variables are values that are stored within a RPGX file inside of `variables.jso
 
 Variables must be organized in `variables.json` files within the `data` directory. The path to the file should match the namespace of the variables. For example:
 
-- Variables in namespace `combat.stats` should be in `/data/combat/stats/variables.json`
+- Variables in namespace `combat:stats` should be in `/data/combat/stats/variables.json`
 - Variables in namespace `character` should be in `/data/character/variables.json`
 
 ## Structure
@@ -40,7 +40,7 @@ Variables are defined as JSON objects with specific properties that determine th
   "bonus": {
     "type": "number",
     "description": "Calculated bonus damage based on strength",
-    "value": "{floor(character.stats.strength / 2)}"
+    "value": "{floor(character:stats:strength / 2)}"
   },
   "isAlive": {
     "type": "boolean",
@@ -117,7 +117,7 @@ Values are validated against their declared type:
 | Type      | Valid Values         | Examples                                       |
 | --------- | -------------------- | ---------------------------------------------- |
 | `integer` | Whole numbers        | `5`, `{floor(3.7)}`                            |
-| `number`  | Any numeric value    | `3.14`, `{character.abilities:strength * 1.5}` |
+| `number`  | Any numeric value    | `3.14`, `{character:abilities:strength * 1.5}` |
 | `string`  | Text strings         | `"Hello"`, `{name + " " + title}`              |
 | `boolean` | True/false values    | `true`, `{health > 0}`                         |
 | `array`   | List of values       | `[]`, `[1,2,3]`, `[[], [1], [2]]`              |

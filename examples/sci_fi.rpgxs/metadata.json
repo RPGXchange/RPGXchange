@@ -4,7 +4,7 @@
   "description": "Science fiction rules and statistics",
   "version": "0.1.0",
   "type": "source",
-  "namespace": "example.sci_fi",
+  "namespace": "example:sci_fi",
   "rpgxVersion": "0.1.0",
   "dependencies": [
     {

@@ -41,7 +41,7 @@ Operators are evaluated in the following order (highest to lowest):
 Variables and other resources can be referenced using either its id or namespace and id. When referencing a variable with its namespace, use the namespace path followed by a colon followed by the resource id:
 
 - Resource Id: `strength`
-- Namespaced reference: `character.stats:strength`
+- Namespaced reference: `character:stats:strength`
 
 ## Built-in Functions
 

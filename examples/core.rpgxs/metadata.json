@@ -5,7 +5,7 @@
   "description": "Basic example of core rules and statistics for a tabletop RPG system",
   "version": "0.1.0",
   "type": "source",
-  "namespace": "example.core",
+  "namespace": "example:core",
   "rpgxVersion": "0.1.0",
   "authors": [
     {

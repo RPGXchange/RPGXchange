@@ -8,7 +8,7 @@
   "strengthModifier": {
     "type": "integer",
     "description": "Strength modifier",
-    "value": "{example.core.abilities:calcModifier(example.core.abilities.strength)}"
+    "value": "{example:core:abilities:calcModifier(example:core:abilities:strength)}"
   },
   "constitution": {
     "type": "integer",
@@ -18,7 +18,7 @@
   "constitutionModifier": {
     "type": "integer",
     "description": "Constitution modifier",
-    "value": "{example.core.abilities:calcModifier(example.core.abilities.constitution)}"
+    "value": "{example:core:abilities:calcModifier(example:core:abilities:constitution)}"
   },
   "intelligence": {
     "type": "integer",
@@ -28,6 +28,6 @@
   "intelligenceModifier": {
     "type": "integer",
     "description": "Intelligence modifier",
-    "value": "{example.core.abilities:calcModifier(example.core.abilities.intelligence)}"
+    "value": "{example:core:abilities:calcModifier(example:core:abilities:intelligence)}"
   }
 }
