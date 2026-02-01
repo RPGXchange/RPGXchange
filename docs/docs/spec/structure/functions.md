@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Functions
 
 Functions are operations that are defined within RPGX files inside of `functions.json` files located in the ZIP archive. These files must be located within the `data` folder in a directory structure that corresponds to their [namespace](./namespaces.md).

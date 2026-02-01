@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Namespaces
 
 Namespaces in RPGX files are determined by the resource path within rooted directories (e.g., `data` or `assets`) inside the ZIP archive. The namespace hierarchy follows folder paths, with each subdirectory representing a segment of the namespace. Every namespace is prepended by the namespace specified in the [metadata.json](./metadata.md) for the RPGX file.

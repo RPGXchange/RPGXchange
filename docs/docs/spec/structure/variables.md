@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Variables
 
 Variables are values that are stored within a RPGX file inside of `variables.json` files located in the ZIP archive. These files must be located within the `data` folder in a directory structure that corresponds to their [namespace](./namespaces.md).

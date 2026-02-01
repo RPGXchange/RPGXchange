@@ -1,0 +1,34 @@
+v0.1:
+  label: v0.1
+  permalink: /v0.1
+  description: Version 1 prerelease
+
+v0.2:
+  label: v0.2
+  permalink: /v0.2
+  description: Version 2 prerelease
+
+prerelease:
+  label: Prerelease
+  permalink: /prerelease
+  description: Prerelease version
+
+breaking-changes:
+  label: Breaking Changes
+  permalink: /breaking-changes
+  description: Introduces breaking changes
+
+features:
+  label: Features
+  permalink: /features
+  description: Adds new features
+
+bug-fixes:
+  label: Bug Fixes
+  permalink: /bug-fixes
+  description: Fixes bugs
+
+security:
+  label: Security
+  permalink: /security
+  description: Fixes security issues
