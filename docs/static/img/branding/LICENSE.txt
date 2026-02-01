@@ -1,0 +1,13 @@
+BRANDING ASSETS - TRADEMARK NOTICE
+
+These branding assets are the intellectual property of Whix100
+and are NOT covered by the CC BY-SA 4.0 license on the rest of this project.
+
+PERMITTED: Using these assets to indicate compatibility/support for the
+RPGXchange file format (e.g., "Supports RPGXchange" badges, documentation
+showing import/export functionality) with clear attribution.
+
+PROHIBITED: Modifying these assets, claiming ownership, using in derivative
+projects, or implying official affiliation/endorsement.
+
+See ../../../../BRANDING.md (https://github.com/rpgxchange/rpgxchange/blob/main/BRANDING.md) for full details.

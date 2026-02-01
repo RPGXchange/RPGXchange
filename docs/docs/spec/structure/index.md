@@ -1,8 +1,14 @@
+---
+sidebar_label: Overview
+sidebar_position: 0
+---
+
 # File Structure Overview
 
 RPGXchange (RPGX) files are ZIP archives containing structured data and assets for tabletop roleplaying games. This document outlines the standard file structure for both RPGXSource (RPGXS) and RPGXCharacter (RPGXC) files.
 
 ## Basic Structure
+
 Located within the root of the archive file, is a `metadata.json` file that contains information about the RPGX file. There is also optionally a `data` folder and an `assets` folder to contain the contents of the RPGX file. Some platforms or clients may define additional directories or files for additional functionality.
 
 ```
