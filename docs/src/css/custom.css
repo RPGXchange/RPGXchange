@@ -6,8 +6,7 @@
   --ifm-color-primary-light: #b112c9;
   --ifm-color-primary-lighter: #b912d2;
   --ifm-color-primary-lightest: #cf18eb;
-  /* --ifm-color-secondary: #b75310;
-  --ifm-color-accent: #b7107f; */
+  --ifm-color-accent: #b75310;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -21,11 +20,14 @@
   --ifm-color-primary-lighter: #e273f3;
   --ifm-color-primary-lightest: #eb9ef7;
   --ifm-background-color: #181920;
-  /* --ifm-color-secondary: #ef8b48;
-  --ifm-color-accent: #ef48b7; */
+  --ifm-color-accent: #ef8b48;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 main {
   padding: 1rem 5rem;
+}
+
+a:hover {
+  color: var(--ifm-color-accent);
 }

@@ -6,6 +6,7 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "build:pdf": "docs-to-pdf docusaurus --initialDocURLs=\"http://localhost:3000/RPGXchange/docs/spec/\" --coverTitle=\"RPGXchange\" --coverSub=\"One format. Infinite adventures.\" --coverImage=\"http://localhost:3000/RPGXchange/img/branding/logo.svg\" --baseUrl=\"http://rpgxchange.github.io/RPGXchange/\" --version=\"3\" --outputPDFFilename=\"static/RPGXchange.Specification.pdf\"",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
