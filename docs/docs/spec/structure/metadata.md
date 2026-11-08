@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Metadata
 
 The `metadata.json` file is required in the root directory and contains essential information about the RPGX file.

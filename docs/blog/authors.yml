@@ -1,0 +1,19 @@
+whix100:
+  name: Whix100
+  url: https://github.com/whix100
+  image_url: https://github.com/whix100.png
+  page: true
+  socials:
+    github: whix100
+    youtube: whix100
+    bluesky: whix100
+    mastodon: whix100
+    twitter: whix100
+
+rpgx:
+  name: RPGXchange Contributors
+  url: https://github.com/RPGXchange
+  image_url: /img/branding/logo.svg
+  page: true
+  socials:
+    github: rpgxchange

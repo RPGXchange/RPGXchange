@@ -1,0 +1,25 @@
+.sidebarWrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdfLink {
+  padding: 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  margin-top: auto;
+  text-align: center;
+}
+
+.pdfLink a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.pdfLink a:hover {
+  color: var(--ifm-color-accent);
+  text-decoration: underline;
+}

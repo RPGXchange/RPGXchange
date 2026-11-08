@@ -1,0 +1,104 @@
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="nodeMask">
+      <rect fill="white" x="0" y="0" width="1024" height="1024" />
+      <circle cx="512" cy="48" r="64" fill="black" />
+      <circle cx="906.697" cy="304.492" r="64" fill="black" />
+      <circle cx="906.697" cy="719.508" r="64" fill="black" />
+      <circle cx="512" cy="976" r="64" fill="black" />
+      <circle cx="117.303" cy="719.508" r="64" fill="black" />
+      <circle cx="117.303" cy="304.492" r="64" fill="black" />
+
+      <circle cx="512" cy="235.323" r="64" fill="black" />
+      <circle cx="755.934" cy="650.339" r="64" fill="black" />
+      <circle cx="268.066" cy="650.339" r="64" fill="black" />
+
+      <circle cx="512" cy="788.677" r="64" />
+      <circle cx="755.934" cy="373.661" r="64" />
+      <circle cx="268.066" cy="373.661" r="64" />
+    </mask>
+    <mask id="backgroundMask">
+      <rect fill="white" x="0" y="0" width="1024" height="1024" mask="url(#nodeMask)" />
+
+      <path stroke="black" stroke-width="56" fill="transparent"
+        d="M 512 48 L 906.697 304.492 906.697 719.508 512 976 117.303 719.508 117.303 304.492 Z" />
+      <path stroke="black" stroke-width="56" fill="transparent" d="M 512 235.323 755.934 650.339 268.066 650.339 Z" />
+
+      <line stroke="black" stroke-width="56" fill="transparent" x1="512" y1="235.323" x2="117.303" y2="304.492" />
+      <line stroke="black" stroke-width="56" fill="transparent" x1="512" y1="235.323" x2="512" y2="48" />
+      <line stroke="black" stroke-width="56" fill="transparent" x1="512" y1="235.323" x2="906.697" y2="304.492" />
+
+      <line stroke="black" stroke-width="56" fill="transparent" x1="755.934" y1="650.339" x2="906.697" y2="304.492" />
+      <line stroke="black" stroke-width="56" fill="transparent" x1="755.934" y1="650.339" x2="906.697" y2="719.508" />
+      <line stroke="black" stroke-width="56" fill="transparent" x1="755.934" y1="650.339" x2="512" y2="976" />
+
+      <line stroke="black" stroke-width="56" fill="transparent" x1="268.066" y1="650.339" x2="512" y2="976" />
+      <line stroke="black" stroke-width="56" fill="transparent" x1="268.066" y1="650.339" x2="117.303" y2="719.508" />
+      <line stroke="black" stroke-width="56" fill="transparent" x1="268.066" y1="650.339" x2="117.303" y2="304.492" />
+    </mask>
+    <mask id="outlineMask">
+      <rect fill="white" x="0" y="0" width="1024" height="1024" mask="url(#nodeMask)" />
+
+      <line stroke="black" stroke-width="56" fill="transparent" x1="512" y1="235.323" x2="117.303" y2="304.492" />
+      <line stroke="black" stroke-width="56" fill="transparent" x1="512" y1="235.323" x2="512" y2="48" />
+      <line stroke="black" stroke-width="56" fill="transparent" x1="512" y1="235.323" x2="906.697" y2="304.492" />
+
+      <line stroke="black" stroke-width="56" fill="transparent" x1="755.934" y1="650.339" x2="906.697" y2="304.492" />
+      <line stroke="black" stroke-width="56" fill="transparent" x1="755.934" y1="650.339" x2="906.697" y2="719.508" />
+      <line stroke="black" stroke-width="56" fill="transparent" x1="755.934" y1="650.339" x2="512" y2="976" />
+
+      <line stroke="black" stroke-width="56" fill="transparent" x1="268.066" y1="650.339" x2="512" y2="976" />
+      <line stroke="black" stroke-width="56" fill="transparent" x1="268.066" y1="650.339" x2="117.303" y2="719.508" />
+      <line stroke="black" stroke-width="56" fill="transparent" x1="268.066" y1="650.339" x2="117.303" y2="304.492" />
+    </mask>
+  </defs>
+  <g id="background-edges" stroke="#ef8b48" stroke-width="24" fill="transparent" mask="url(#backgroundMask)">
+    <path d="M 755.934 373.661 512 788.677 268.066 373.661 Z" />
+
+    <line x1="755.934" y1="373.661" x2="512" y2="48" />
+    <line x1="755.934" y1="373.661" x2="906.697" y2="304.492" />
+    <line x1="755.934" y1="373.661" x2="906.697" y2="719.508" />
+
+    <line x1="512" y1="788.677" x2="906.697" y2="719.508" />
+    <line x1="512" y1="788.677" x2="512" y2="976" />
+    <line x1="512" y1="788.677" x2="117.303" y2="719.508" />
+
+    <line x1="268.066" y1="373.661" x2="117.303" y2="719.508" />
+    <line x1="268.066" y1="373.661" x2="117.303" y2="304.492" />
+    <line x1="268.066" y1="373.661" x2="512" y2="48" />
+  </g>
+  <g id="background-nodes" stroke-width="0" fill="#ef8b48">
+    <circle cx="512" cy="788.677" r="48" />
+    <circle cx="755.934" cy="373.661" r="48" />
+    <circle cx="268.066" cy="373.661" r="48" />
+  </g>
+  <g id="foreground-edges" stroke="#d948ef" stroke-width="24" fill="transparent" mask="url(#nodeMask)">
+    <path d="M 512 48 L 906.697 304.492 906.697 719.508 512 976 117.303 719.508 117.303 304.492 Z"
+      mask="url(#outlineMask)" />
+    <path d="M 512 235.323 755.934 650.339 268.066 650.339 Z" />
+
+    <line x1="512" y1="235.323" x2="117.303" y2="304.492" />
+    <line x1="512" y1="235.323" x2="512" y2="48" />
+    <line x1="512" y1="235.323" x2="906.697" y2="304.492" />
+
+    <line x1="755.934" y1="650.339" x2="906.697" y2="304.492" />
+    <line x1="755.934" y1="650.339" x2="906.697" y2="719.508" />
+    <line x1="755.934" y1="650.339" x2="512" y2="976" />
+
+    <line x1="268.066" y1="650.339" x2="512" y2="976" />
+    <line x1="268.066" y1="650.339" x2="117.303" y2="719.508" />
+    <line x1="268.066" y1="650.339" x2="117.303" y2="304.492" />
+  </g>
+  <g id="foreground-nodes" fill="#d948ef">
+    <circle cx="512" cy="48" r="48" />
+    <circle cx="906.697" cy="304.492" r="48" />
+    <circle cx="906.697" cy="719.508" r="48" />
+    <circle cx="512" cy="976" r="48" />
+    <circle cx="117.303" cy="719.508" r="48" />
+    <circle cx="117.303" cy="304.492" r="48" />
+
+    <circle cx="512" cy="235.323" r="48" />
+    <circle cx="755.934" cy="650.339" r="48" />
+    <circle cx="268.066" cy="650.339" r="48" />
+  </g>
+</svg>
